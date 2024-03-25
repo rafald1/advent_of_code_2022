@@ -18,3 +18,6 @@ Please note that while the solutions aim to solve the given puzzles accurately, 
 
 ### [Day 1](https://adventofcode.com/2022/day/1)
 I began by learning how to open files and read them line by line. Additionally, Part 2 required me to start familiarizing myself with vectors: inserting elements, sorting them, and adding up their elements.
+
+### [Day 2](https://adventofcode.com/2022/day/2)
+I practiced with vectors, learned about pairs, unordered maps, enum classes, and static_cast.
