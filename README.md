@@ -15,3 +15,6 @@ Please note that while the solutions aim to solve the given puzzles accurately, 
 - **Choosing IDE:** After my prior experience with PyCharm and IntelliJ, I considered CLion. However, due to the absence of a community edition, I explored other options such as Xcode and Visual Studio Code (VS Code). 
 - **Decision Process:** I experimented with both Xcode and VS Code, switching between them a few times. Ultimately, I chose to proceed with VS Code due to its flexibility and configurability.
 - **Project Structure:** I decided to organize my solutions by splitting each day's solution into two separate files while keeping all the puzzle solutions within one project. This structure posed challenges in Xcode but was successfully implemented in VS Code after some configuration.
+
+### [Day 1](https://adventofcode.com/2022/day/1)
+I began by learning how to open files and read them line by line. Additionally, Part 2 required me to start familiarizing myself with vectors: inserting elements, sorting them, and adding up their elements.
