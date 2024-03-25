@@ -21,3 +21,6 @@ I began by learning how to open files and read them line by line. Additionally, 
 
 ### [Day 2](https://adventofcode.com/2022/day/2)
 I practiced with vectors, learned about pairs, unordered maps, enum classes, and static_cast.
+
+### [Day 3](https://adventofcode.com/2022/day/3)
+I used sets in Part 1. In Part 2, I opted to use a for loop to find a common character in strings.
