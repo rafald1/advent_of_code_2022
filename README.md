@@ -24,3 +24,6 @@ I practiced with vectors, learned about pairs, unordered maps, enum classes, and
 
 ### [Day 3](https://adventofcode.com/2022/day/3)
 I used sets in Part 1. In Part 2, I opted to use a for loop to find a common character in strings.
+
+### [Day 4](https://adventofcode.com/2022/day/4)
+I used regex to familiarize myself with the way it works in C++, learned about tuples, and gained further understanding of vectors.
