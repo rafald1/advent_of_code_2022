@@ -27,3 +27,6 @@ I used sets in Part 1. In Part 2, I opted to use a for loop to find a common cha
 
 ### [Day 4](https://adventofcode.com/2022/day/4)
 I used regex to familiarize myself with the way it works in C++, learned about tuples, and gained further understanding of vectors.
+
+### [Day 5](https://adventofcode.com/2022/day/5)
+Processing the input had to be split into two steps. I used regex for step two. I learned about vectors' emplace_back method and looping through characters in a string. The solution to both part 1 and part 2 of this puzzle was straightforward after dealing with the input.
