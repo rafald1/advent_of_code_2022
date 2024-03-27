@@ -30,3 +30,6 @@ I used regex to familiarize myself with the way it works in C++, learned about t
 
 ### [Day 5](https://adventofcode.com/2022/day/5)
 Processing the input had to be split into two steps. I used regex for step two. I learned about vectors' emplace_back method and looping through characters in a string. The solution to both part 1 and part 2 of this puzzle was straightforward after dealing with the input.
+
+### [Day 6](https://adventofcode.com/2022/day/6)
+This puzzle was straightforward. I used sets to assess uniqueness of characters in strings.
