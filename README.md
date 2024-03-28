@@ -36,3 +36,6 @@ This puzzle was straightforward. I used sets to assess uniqueness of characters 
 
 ### [Day 7](https://adventofcode.com/2022/day/7)
 It took some time to figure out the proper way to process the input and then refactor it. I used a stack (vector) to track directory structures and an unordered map to store their sizes. Once accomplished, solving both part 1 and part 2 was straightforward. At this point, I learned that '{}' can be used to initialize variables.
+
+### [Day 8](https://adventofcode.com/2022/day/8)
+I struggled a lot with figuring out how to solve this puzzle with my limited knowledge of C++. I decided to assess the visibility of trees by traversing row by row and column by column instead of exploring in four directions for each individual tree. This approach worked fine for part 1. However, for part 2, I had to start over and calculate the scenic score for each individual tree.
