@@ -43,3 +43,6 @@ I struggled a lot with figuring out how to solve this puzzle with my limited kno
 ### [Day 9](https://adventofcode.com/2022/day/9)
 I used an unordered set to track the unique positions of a tail. Additionally, I learned about using a struct and used it to improve code readability when accessing x and y positions of knots. In part 2, the number of knots increased from 2 to 10, which forced me to modify the way a tail followed a head. Initially, my new implementation wasn't proper as the result differed slightly from the correct answer. I then referred back to examples and drew diagrams to identify the issue with moving knots around. When refactoring the correct solution, I learned about the spaceship operator (`<=>`) but ended up not using it as it didn't provide any benefits over the working comparison in this case.
 I encountered an issue when trying to use `std::unordered_set<std::pair<int, int>>`. As I didn’t know any better, I used `std::unordered_set<std::string>` and converted and combined both ints into a unique string.
+
+### [Day 10](https://adventofcode.com/2022/day/10)
+It was a straightforward puzzle. The input was easy to process. The solution didn't require anything more than I have already familiarized myself with.
