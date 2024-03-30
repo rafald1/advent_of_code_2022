@@ -46,3 +46,6 @@ I encountered an issue when trying to use `std::unordered_set<std::pair<int, int
 
 ### [Day 10](https://adventofcode.com/2022/day/10)
 It was a straightforward puzzle. The input was easy to process. The solution didn't require anything more than I have already familiarized myself with.
+
+### [Day 11](https://adventofcode.com/2022/day/11)
+The input was difficult to process, leading me to use a struct to store input data. Throughout the challenge, there were many opportunities to learn and try different things. For the first time, I used a lambda function, `std::find_if`, and `std::erase`. In Part 2, I had to use modulo magic to keep numbers within a manageable range without influencing the result of necessary tests.
