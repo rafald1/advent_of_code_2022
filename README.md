@@ -61,3 +61,8 @@ I noticed that many nodes couldn't be reached, as their shortest path value was 
 The challenge here was to parse and compare the input properly against each other. Unfortunately, the first attempt wasn't successful, and it took a lot of time to pinpoint the issue. It was a good opportunity to use additional tests to help identify edge cases, but it seems C++ doesn't have a built-in unit test module. After reading about different frameworks, I opted for using plain asserts.
 
 In Part 2, only one tweak was required in the comparison function used as a custom sort function with `std::sort` to sort all packets. Sorting wasn't strictly necessary to get the answer, as comparing introduced dividers against packets and counting the number of packets that were "smaller" than dividers worked better. However, it was an opportunity to see a custom sort function in action.
+
+### [Day 14](https://adventofcode.com/2022/day/14)
+I utilized regex to parse the input data. Based on the input, I constructed a cave represented by an unordered set. The trickiest part was correctly implementing the behavior of pouring sand, which took a few tries to get right. In Part 2, I had to modify the pouring sand behavior to address changing conditions.
+
+Along the way, I learned about templates and how to compute a hash for a pair when using unordered sets or unordered maps.
