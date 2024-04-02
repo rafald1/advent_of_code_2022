@@ -51,9 +51,13 @@ It was a straightforward puzzle. The input was easy to process. The solution did
 The input was difficult to process, leading me to use a struct to store input data. Throughout the challenge, there were many opportunities to learn and try different things. For the first time, I used a lambda function, `std::find_if`, and `std::erase`. In Part 2, I had to use modulo magic to keep numbers within a manageable range without influencing the result of necessary tests.
 
 ### [Day 12](https://adventofcode.com/2022/day/12)
-
 For this puzzle, I used an unordered map to store the x, y positions of the surrounding area along with the elevation level. The next step was to build a directional graph, and finally, I applied the Breadth-First Search (BFS) algorithm to find the shortest path.
 
 In Part 2, I found it more convenient to choose the end node as the start node and I used Dijkstra's algorithm to determine the shortest path from all shortest paths between the elevation level of 'a' and the endpoint 'E'. I used a vector to store the elevation levels of the surrounding area, which I then utilized to build an unordered map representing the directed graph. Since the graph was unweighted, there was no need to store edge weights. During the process, each node received a unique label represented by an integer value starting from 0. I simplified the Dijkstra algorithm by removing the need to track the parent node for each node. In the refactoring phase, I removed an unordered set that tracked visited nodes, as checking if the shortest path for a node is equal to infinity indicates whether the node has been visited or not.
 
 I noticed that many nodes couldn't be reached, as their shortest path value was equal to infinity after running the algorithm. Because the graph was unweighted, the algorithm could be greatly simplified, as the first time you encounter a node, you always reach it with the minimum number of steps.
+
+### [Day 13](https://adventofcode.com/2022/day/13)
+The challenge here was to parse and compare the input properly against each other. Unfortunately, the first attempt wasn't successful, and it took a lot of time to pinpoint the issue. It was a good opportunity to use additional tests to help identify edge cases, but it seems C++ doesn't have a built-in unit test module. After reading about different frameworks, I opted for using plain asserts.
+
+In Part 2, only one tweak was required in the comparison function used as a custom sort function with `std::sort` to sort all packets. Sorting wasn't strictly necessary to get the answer, as comparing introduced dividers against packets and counting the number of packets that were "smaller" than dividers worked better. However, it was an opportunity to see a custom sort function in action.
