@@ -66,3 +66,6 @@ In Part 2, only one tweak was required in the comparison function used as a cust
 I utilized regex to parse the input data. Based on the input, I constructed a cave represented by an unordered set. The trickiest part was correctly implementing the behavior of pouring sand, which took a few tries to get right. In Part 2, I had to modify the pouring sand behavior to address changing conditions.
 
 Along the way, I learned about templates and how to compute a hash for a pair when using unordered sets or unordered maps.
+
+### [Day 15](https://adventofcode.com/2022/day/15)
+I learned about `sscanf` as another way to process input data. I chose a straightforward approach to solving this puzzle. Unfortunately, the solution for part 2 is quite slow.
