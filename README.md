@@ -69,3 +69,12 @@ Along the way, I learned about templates and how to compute a hash for a pair wh
 
 ### [Day 15](https://adventofcode.com/2022/day/15)
 I learned about `sscanf` as another way to process input data. I chose a straightforward approach to solving this puzzle. Unfortunately, the solution for part 2 is quite slow.
+
+### [Day 16](https://adventofcode.com/2022/day/16)
+This puzzle was very challenging. Starting with input processing, I had the opportunity to learn more about regex. Here's how I tackled it:
+- I used an unordered map to store all distances between nodes and applied the Floyd–Warshall algorithm to calculate them.
+- I used only valves capable of releasing pressure and the starting valve.
+- I implemented a recursive function that tried all possible combinations of valves that could be opened during the allotted time.
+- I utilized another unordered map to speed things up by memorizing the results of the recursive function.
+
+Part 2 made things even more complicated. The final solution is very slow and takes almost 2 minutes to find the answer. At this point, I'm just happy it works.
