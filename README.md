@@ -78,3 +78,8 @@ This puzzle was very challenging. Starting with input processing, I had the oppo
 - I utilized another unordered map to speed things up by memorizing the results of the recursive function.
 
 Part 2 made things even more complicated. The final solution is very slow and takes almost 2 minutes to find the answer. At this point, I'm just happy it works.
+
+### [Day 17](https://adventofcode.com/2022/day/17)
+For this puzzle, I decided to use complex numbers to store x and y positions, as I had never tried this approach before. It made position-related calculations straightforward. Along the way, I learned about the `static` keyword and its use in functions to produce different outcomes based on subsequent calls.
+
+In Part 2, I was forced to rethink my approach, and the `static` keyword disappeared from functions. There were many difficult parts in this puzzle. Initially, I struggled with properly moving rocks and calculating the height of the tower created by rocks. In Part 2, the challenge was predicting the height of the tower after 1 trillion (or 1 billion, depending on where you're from) of rocks.
