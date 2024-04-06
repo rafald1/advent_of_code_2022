@@ -83,3 +83,12 @@ Part 2 made things even more complicated. The final solution is very slow and ta
 For this puzzle, I decided to use complex numbers to store x and y positions, as I had never tried this approach before. It made position-related calculations straightforward. Along the way, I learned about the `static` keyword and its use in functions to produce different outcomes based on subsequent calls.
 
 In Part 2, I was forced to rethink my approach, and the `static` keyword disappeared from functions. There were many difficult parts in this puzzle. Initially, I struggled with properly moving rocks and calculating the height of the tower created by rocks. In Part 2, the challenge was predicting the height of the tower after 1 trillion (or 1 billion, depending on where you're from) of rocks.
+
+### [Day 18](https://adventofcode.com/2022/day/18)
+In Part 1 I used a straighforward approach to solve it. I used struct to represent lava dropletes as cubes. I overloaded equality operator so I can use this struct as a type in unordered set. I added operator+ as well to make calculating x, y, z position of 6 adjecent cubes easier.
+Part 2 required to only count external surface. This was accomplished by using the unorderd set to map the surrounding cubes and finally checking if every lava droplet has any adjecent cube in this map of surrounding cubes indicating that this side of lava droplet is an external side.
+
+### [Day 18](https://adventofcode.com/2022/day/18)
+In Part 1, I used a straightforward approach to solve it. I represented lava droplets as cubes using a struct. To facilitate comparisons, I overloaded the equality operator for this struct and added the operator+ to simplify the calculation of the positions of the six adjacent cubes.
+
+For Part 2, the task was to count only the external surface of the lava droplets. I achieved this by using an unordered set to map the surrounding cubes and then checked if every lava droplet had any adjacent cube in this set of surrounding cubes. This indicated that this side of the lava droplet was an external side.
