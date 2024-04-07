@@ -99,3 +99,6 @@ For Part 1, I created a struct and overloaded the +, -, >=, and [] operators to 
 Part 2 proved that you can easily prune the correct branch. I had to make my pruning conditions less strict, which resulted in a 2.1-second solution. I tried with memoization as well, but it only increased the time, so I ultimately removed it.
 
 Returning to Part 1, I loosened the pruning conditions, resulting in a 0.4 second solution.
+
+### [Day 20](https://adventofcode.com/2022/day/20)
+This puzzle was a source of confusion for me as I failed to understand why my formula for calculating the new position for negative numbers was producing the wrong value. I spent some time troubleshooting the issue, only to realize that `a + b % a` isn't the same as `a - abs(b) % a` when 'b' is a negative integer and 'a' is of type `size_t`, with the expected result also being `size_t`. In the end, I moved the calculation of the new position to a function and overdid it just for the sake of learning. Part 2 required small changes to get it working.
