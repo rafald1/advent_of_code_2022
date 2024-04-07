@@ -92,3 +92,10 @@ Part 2 required to only count external surface. This was accomplished by using t
 In Part 1, I used a straightforward approach to solve it. I represented lava droplets as cubes using a struct. To facilitate comparisons, I overloaded the equality operator for this struct and added the operator+ to simplify the calculation of the positions of the six adjacent cubes.
 
 For Part 2, the task was to count only the external surface of the lava droplets. I achieved this by using an unordered set to map the surrounding cubes and then checked if every lava droplet had any adjacent cube in this set of surrounding cubes. This indicated that this side of the lava droplet was an external side.
+
+### [Day 19](https://adventofcode.com/2022/day/19)
+For Part 1, I created a struct and overloaded the +, -, >=, and [] operators to keep the required changes easy to follow. Initially, the solution was slow, taking 616 seconds to complete. To optimize it, I added memoization, which reduced the time needed to 144 seconds. However, due to the nature of the problem, it was easy to identify cases that were not worth pursuing, allowing for pruning, which further reduced the time to 24 seconds. Continuing to refine the pruning conditions eventually brought the time down to 0.9 seconds. At this point, removing memoization reduced the time to 0.3 seconds.
+
+Part 2 proved that you can easily prune the correct branch. I had to make my pruning conditions less strict, which resulted in a 2.1-second solution. I tried with memoization as well, but it only increased the time, so I ultimately removed it.
+
+Returning to Part 1, I loosened the pruning conditions, resulting in a 0.4 second solution.
