@@ -102,3 +102,7 @@ Returning to Part 1, I loosened the pruning conditions, resulting in a 0.4 secon
 
 ### [Day 20](https://adventofcode.com/2022/day/20)
 This puzzle was a source of confusion for me as I failed to understand why my formula for calculating the new position for negative numbers was producing the wrong value. I spent some time troubleshooting the issue, only to realize that `a + b % a` isn't the same as `a - abs(b) % a` when 'b' is a negative integer and 'a' is of type `size_t`, with the expected result also being `size_t`. In the end, I moved the calculation of the new position to a function and overdid it just for the sake of learning. Part 2 required small changes to get it working.
+
+### [Day 21](https://adventofcode.com/2022/day/21)
+Part 1 was straightforward to solve, and the recursive function proved to be a good choice for solving this problem.
+Part 2 became complicated due to changes in conditions and required an additional recursive function. The first step was to attempt to calculate the left and right values of the root operation using the recursive function from Part 1. However, only one of these values could be calculated in Part 2. This value had to be used to calculate backward until the missing value was determined.
