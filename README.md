@@ -111,3 +111,9 @@ Part 2 became complicated due to changes in conditions and required an additiona
 This is an interesting puzzle. For Part 1, I decided to build a map using an unordered map. Once an edge of the area is reached, you were supposed to appear on the other side of the current row or column, depending on the direction you were moving. To accomplish that, I extended the map by including information about the minimum and maximum index numbers of columns for each row and the minimum and maximum index numbers of rows for each column. This allowed for easy wrapping around based on position and direction of movement.
 
 I decided to skip Part 2 as I would like to give it more thought on how to move around edges when you are on the surface of a cube.
+
+### [Day 23](https://adventofcode.com/2022/day/23)
+Once again, I used complex numbers to represent x, y positions. This puzzle resembled Conway's Game of Life, but with elves moving around according to their own rules. In Part 1, the task was to simulate 10 rounds and calculate the empty space in the smallest rectangle that contained all elves. 
+
+For Part 2, I had to simulate until the elves didn't need to move anymore according to the rules. In this part, I improved on elves collision management, realizing that only two elves can try to occupy the same spot at the same time. This optimization sped things up a little bit.
+I also realized that the way you calculate the hash can significantly impact performance. I observed differences in execution time, taking 6.1, 4.3, and 2.2 seconds to find the solution based on the way the hash was calculated.
