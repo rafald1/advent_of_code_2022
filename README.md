@@ -120,3 +120,6 @@ I also realized that the way you calculate the hash can significantly impact per
 
 ### [Day 24](https://adventofcode.com/2022/day/24)
 I changed my approach to solving this puzzle a few times. Initially, I started with calculating and storing blizzard locations every round. However, I ended up storing only the original blizzard locations and "rewinding time". The location would be blizzard-free if in the other four locations there were no blizzards with the correct directions back in the past. Additionally, I changed my approach from using a queue to find the path to storing all possible locations that can be reached every turn. The puzzle required determining the fastest time the exit can be reached, and the knowledge of the exact path that has to be taken wasn't required. For Part 2, I made small changes to allow for additional travel back to the start and again to the end location.
+
+### [Day 25](https://adventofcode.com/2022/day/25)
+With a little bit of math, I achieved a straightforward solution for converting snafu values to decimal and decimal to snafu.
