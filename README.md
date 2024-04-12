@@ -112,6 +112,16 @@ This is an interesting puzzle. For Part 1, I decided to build a map using an uno
 
 I decided to skip Part 2 as I would like to give it more thought on how to move around edges when you are on the surface of a cube.
 
+Update: After spending a lot of time studing cubes, I have learnt that there are 11 distinctive 2d layouts of a cube and each of them can have diffrent orientation. Which made the approach of recognizing the layout not feasible. There are 14 edges that need to be connected to create 7 pairs. Obviously, if an external angle between edges is 90 degrees you can connect these edges. Depending on a layout you can easily create 2-4 obvious pairs. The difficult part was to connect all remaining edges. I almost gave up and hardcoded how traverse between edges. Luckily, I have found a tip that made this solution possible. The tip was: when you connect two edges (external angle between edges is 90 degrees) you remove them and you change the direction of (rotate) each edge after deleted ones and you carry on with the process until all edges are connected.
+
+It took a lot of work, but final solution is working properly. Step by step process below.
+1. Create an edge list that contains direction, x, and y by moving around the edges of a map in clockwise motion. I have started at the top left corner of a map with direction indicating east. I moved in this direction as long as needed and changed the direction to follow the map edges all the way to the starting position.
+2. Calculate the real edge length, which is the minimum edge length amongs all the edges.
+3. Split the list you created in step 1 knowing the real edge length. I guess I could have divided by 14 and skip the step 2. ;) The important thing is that list is created in such manner that you don't loose the original directions of each edge in the next step.
+4. Find edge pairs by following the tip. Connect two edges that have external angle between them equal to 90 degrees, remove them, change the direction of each edge after deleted ones, contiue with the process until all edges are connected.
+5. Build the proper wrap map by joining every edge point on paired edges. I connected points in original order with points in reversed order. Additionaly, I included the direction in this wrap map. The way to get proper directions is to rotate (original direction from step 1) left to get the direction that you will have when leaving this cube face and to rotate right to get the direction you will have when entering this cube face.
+That is it. All this work to just build a proper wrap map.
+
 ### [Day 23](https://adventofcode.com/2022/day/23)
 Once again, I used complex numbers to represent x, y positions. This puzzle resembled Conway's Game of Life, but with elves moving around according to their own rules. In Part 1, the task was to simulate 10 rounds and calculate the empty space in the smallest rectangle that contained all elves. 
 
